@@ -26,4 +26,4 @@ with r_ex:
   badge(type="Youtube", url="https://www.youtube.com/channel/UCU2ciboF3zbv9sV4Bir18NQ")
   r_ex.header("My other streamlit websites (will be finished by Jan 10, 2025)")
   badge(type="Streamlit", url="https://python-programs.streamlit.app")
-  badge(type="Streamlit, url="https://pygame-programs.streamlit.app")
+  badge(type="Streamlit", url="https://pygame-programs.streamlit.app")
