@@ -23,7 +23,6 @@ with m_ex:
   m_ex.subheader("Math")
 with r_ex:
   r_ex.header("My channel")
-  badge(type="youtube", url="https://www.youtube.com/channel/UCU2ciboF3zbv9sV4Bir18NQ")
   r_ex.header("My other streamlit websites (will be finished by Jan 10, 2025)")
   badge(type="streamlit", url="https://python-programs.streamlit.app")
   badge(type="streamlit", url="https://pygame-programs.streamlit.app")
