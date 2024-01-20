@@ -21,7 +21,8 @@ st.header("All about me")
 st.caption("This is my first website posted on streamlit cloud!")
 l, m, r = st.tabs(["Home", "Me", "Website"])
 with l:
-  st.header("Home page", anchor="Home")
+  st.header("Announcement stuff")
+  st.write("Check out the website 'find your location'!")
 with m:
   st.header("All about me", anchor="Me")
   st.subheader("I'm a kid doing coding stuff normally in python.")
@@ -33,6 +34,9 @@ with m:
 with r:
   st.header("My channel", anchor="Website")
   st.link_button("The channel", url="https://www.youtube.com/channel/UCU2ciboF3zbv9sV4Bir18NQ")
+  st.header("My finished projects!")
+  st.write("Find your location")
+  badge(type="streamlit", url="https://find-your-location.streamlit.app")
   st.header("My other streamlit websites (will be finished by March 1, 2024)")
   st.write("Python programs")
   badge(type="streamlit", url="https://python-programs.streamlit.app")
