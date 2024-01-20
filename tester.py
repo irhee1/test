@@ -1,4 +1,6 @@
 import streamlit as st
+import requests
+from streamlit_lottie import st_lottie
 from streamlit_extras.let_it_rain import rain
 from streamlit_extras.badges import badge
 st.set_page_config(page_title="All about me!", page_icon="🐼", layout="wide")
@@ -8,6 +10,13 @@ rain(
   falling_speed=7,
   animation_length="infinite",
 )
+def load_lottieurl(url):
+  r = requests.get(url)
+  if r.status_code != 200:
+    return None
+  return r.json()
+kid_that_code = load_lottieurl("https://lottie.host/43e9df2a-0675-46c5-a3c8-116f9664e1dd/hnl9rDKKmX.json")
+website = load_lottieurl("https://lottie.host/3b39e3b5-2092-4364-ae5b-7353610dfe4a/Ml44OIJSvO.json")
 st.header("All about me")
 st.caption("This is my first website posted on streamlit cloud!")
 st.write("---")
@@ -16,7 +25,11 @@ with l:
   st.header("Home page", anchor="Home")
 with m:
   st.header("All about me", anchor="Me")
-  st.write("I'm a kid named Isaac Rhee doing coding stuff normally in python. I can make simple websites using streamlit (it's really easy to use). \nP.S: I might make more websites")
+  "I'm a kid named Isaac Rhee doing coding stuff normally in python."
+  st_lottie(kid_that_code, height=1000, key="Coding")
+  "I can make simple websites using streamlit (it's really easy to use and learn)." 
+  st_lottie(website, height=1000, key="Website")
+  "P.S: I might make more websites"
 with r:
   st.header("My channel", anchor="Website")
   st.link_button("The channel", url="https://www.youtube.com/channel/UCU2ciboF3zbv9sV4Bir18NQ")
