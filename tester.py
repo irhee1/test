@@ -24,7 +24,7 @@ with l:
   st.header("Home page", anchor="Home")
 with m:
   st.header("All about me", anchor="Me")
-  st.subheader("I'm a kid named Isaac Rhee doing coding stuff normally in python.")
+  st.subheader("I'm a kid doing coding stuff normally in python.")
   st.subheader("I've been coding for about 10 months")
   st_lottie(kid_that_code, height=250, key="Coding")
   st.subheader("I can make simple websites using streamlit and I try to learn more features for it everyday.")
