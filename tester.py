@@ -25,9 +25,9 @@ with l:
 with m:
   st.header("All about me", anchor="Me")
   st.subheader("I'm a kid named Isaac Rhee doing coding stuff normally in python.")
-  st_lottie(kid_that_code, height=500, key="Coding")
+  st_lottie(kid_that_code, height=250, key="Coding")
   st.subheader("I can make simple websites using streamlit and I try to learn more features for it everyday.")
-  st_lottie(website, height=500, key="Website")
+  st_lottie(website, height=250, key="Website")
   "P.S: I might make more websites"
 with r:
   st.header("My channel", anchor="Website")
