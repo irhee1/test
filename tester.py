@@ -3,6 +3,7 @@ import requests
 from streamlit_lottie import st_lottie
 from streamlit_extras.let_it_rain import rain
 from streamlit_extras.badges import badge
+from streamlit_extras.buy_me_a_coffee import button
 st.set_page_config(page_title="All about me!", page_icon="🐼", layout="wide")
 rain(
   emoji="⭐",
@@ -22,7 +23,8 @@ st.caption("This is my first website posted on streamlit cloud!")
 l, m, r = st.tabs(["Home", "Me", "Website"])
 with l:
   st.header("Announcement stuff")
-  st.write("Check out the website 'find your location'!")
+  st.subheader("Donate today!")
+  button(username="kidscodepython", floating=False, width=225)
 with m:
   st.header("All about me", anchor="Me")
   st.subheader("I'm a kid doing coding stuff normally in python.")
