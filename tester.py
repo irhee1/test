@@ -24,7 +24,7 @@ l, m, r = st.tabs(["Home", "Me", "Website"])
 with l:
   st.header("Announcement stuff")
   st.subheader("Donate today!")
-  button(username="kidscodepython", floating=False, width=225)
+  button(username="kidcodespython", floating=False, width=225)
 with m:
   st.header("All about me", anchor="Me")
   st.subheader("I'm a kid doing coding stuff normally in python.")
