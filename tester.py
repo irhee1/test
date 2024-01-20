@@ -25,6 +25,7 @@ with l:
 with m:
   st.header("All about me", anchor="Me")
   st.subheader("I'm a kid named Isaac Rhee doing coding stuff normally in python.")
+  st.subheader("I've been coding for about 10 months")
   st_lottie(kid_that_code, height=250, key="Coding")
   st.subheader("I can make simple websites using streamlit and I try to learn more features for it everyday.")
   st_lottie(website, height=250, key="Website")
@@ -32,6 +33,8 @@ with m:
 with r:
   st.header("My channel", anchor="Website")
   st.link_button("The channel", url="https://www.youtube.com/channel/UCU2ciboF3zbv9sV4Bir18NQ")
-  st.header("My other streamlit websites (will be finished by Jan 10, 2025)")
+  st.header("My other streamlit websites (will be finished by March 1, 2024)")
+  st.write("Python programs")
   badge(type="streamlit", url="https://python-programs.streamlit.app")
+  st.write("Pygame programs")
   badge(type="streamlit", url="https://pygame-programs.streamlit.app")
