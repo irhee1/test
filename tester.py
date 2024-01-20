@@ -19,16 +19,15 @@ kid_that_code = load_lottieurl("https://lottie.host/43e9df2a-0675-46c5-a3c8-116f
 website = load_lottieurl("https://lottie.host/3b39e3b5-2092-4364-ae5b-7353610dfe4a/Ml44OIJSvO.json")
 st.header("All about me")
 st.caption("This is my first website posted on streamlit cloud!")
-st.write("---")
 l, m, r = st.tabs(["Home", "Me", "Website"])
 with l:
   st.header("Home page", anchor="Home")
 with m:
   st.header("All about me", anchor="Me")
-  "I'm a kid named Isaac Rhee doing coding stuff normally in python."
-  st_lottie(kid_that_code, height=1000, key="Coding")
-  "I can make simple websites using streamlit (it's really easy to use and learn)." 
-  st_lottie(website, height=1000, key="Website")
+  st.subheader("I'm a kid named Isaac Rhee doing coding stuff normally in python.")
+  st_lottie(kid_that_code, height=500, key="Coding")
+  st.subheader("I can make simple websites using streamlit (it's really easy to use and learn).")
+  st_lottie(website, height=500, key="Website")
   "P.S: I might make more websites"
 with r:
   st.header("My channel", anchor="Website")
